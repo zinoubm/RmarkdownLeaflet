@@ -1,0 +1,20 @@
+
+
+```{r, echo = F, message = F}
+library(leaflet)
+```
+
+
+```{r, echo = F}
+date.now <- date()
+```
+
+# `r date.now`
+
+```{r}
+m <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lat =36.7538, lng =3.0588, popup = "Algiers, Capital of algeria.")
+m
+```
+
